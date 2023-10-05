@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -9,10 +11,29 @@
     display: flex;
     flex-direction: row;
     padding: 5px;
-    background-color: #333;
+    background-color: #111;
 }
 
 .inicial > ul > li{
-    margin: 2px;
-    background-color: #ccc;
+    margin: 0px 2px;
+    padding: 2px;
+    border: 1px solid #58bb92;
+    background-color: #2d644d;
+    font-size: 25px;
+}
+
+.inicial > ul > li > span{
+    font-family: 'Roboto';
+    color: #58bb92;
+}
+
+/*@media print*/
+@media screen and (max-width: 600px){
+    .inicial > ul{
+        flex-direction: column;
+    }
+
+    .inicial > ul > li{
+        margin: 2px 0px;
+    }
 }
